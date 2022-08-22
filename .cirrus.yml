@@ -1,0 +1,15 @@
+env:
+    GH_TOKEN:
+    GH_USERNAME:
+    GH_EMAIL
+
+task:
+  name: LLVM Repository update
+  timeout_in: 480m
+  container:
+      image: mhmmdfdlyas/dockerfile:k-ubuntu
+      cpu: 8
+      memory: 32G
+
+  main_script:
+       - bash main.sh
