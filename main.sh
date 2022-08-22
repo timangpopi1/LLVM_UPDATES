@@ -9,5 +9,5 @@ git clone -j136 --single-branch "https://timangpopi1:$GH_TOKEN@github.com/greenf
 cd $(pwd)/llvm-project
 while true; do
     git pull https://github.com/llvm/llvm-project main
-    git push -f
+    git push
 done
